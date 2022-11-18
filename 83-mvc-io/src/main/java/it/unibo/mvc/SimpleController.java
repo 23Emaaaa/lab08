@@ -2,6 +2,8 @@ package it.unibo.mvc;
 
 import java.util.List;
 import java.util.Collections;
+import java.util.LinkedList;
+import java.util.Objects;
 
 
 /**
@@ -30,6 +32,11 @@ public final class SimpleController implements Controller {
 
     @Override
     public void print_current_string() {
+        String StrNullmessage = new StrNullmessage("String is null");
+        if (this.nextString == null) {
+            throw new IllegalStateException("Error: " + StrNullmessage);
+        }
+        History_str.add(this.nextString);
+        System.out.println(this.nextString);
     }
-
 }
