@@ -2,15 +2,19 @@ package it.unibo.mvc;
 
 import java.util.List;
 
+
 /**
  * 
  *
  */
 public final class SimpleController implements Controller {
 
+    private final List<String> History_str = new LinkedList()<>;
+    private String nextString;
+
     @Override
     public void set_next_string_print(String printNextString) {
-        
+        this.nextString = Objects.requireNonNull(nextString, "Cannot use null values");   
     }
 
     @Override
