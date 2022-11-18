@@ -19,7 +19,7 @@ public final class SimpleController implements Controller {
 
     @Override
     public String get_next_string_print() {
-        return null;
+        return this.nextString;
     }
 
     @Override
