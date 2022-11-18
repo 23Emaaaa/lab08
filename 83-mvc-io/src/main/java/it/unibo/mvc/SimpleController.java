@@ -13,7 +13,7 @@ public final class SimpleController implements Controller {
     private String nextString;
 
     @Override
-    public void set_next_string_print(String printNextString) {
+    public void set_next_string_print(String nextString) {
         this.nextString = Objects.requireNonNull(nextString, "Cannot use null values");   
     }
 
