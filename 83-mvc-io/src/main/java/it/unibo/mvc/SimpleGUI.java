@@ -1,14 +1,12 @@
 package it.unibo.mvc;
 
-import edu.umd.*;
-
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.List;
 import java.awt.Toolkit;
+import java.util.List;
 
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
@@ -27,13 +25,9 @@ public final class SimpleGUI {
     private static final String HISTORY = "History";
     private final Controller controller;
 
-    /**
-     * #2 sets up the whole view:
-     */
-
-
      /**
-     * #3 something to be added:
+     * #2 sets up the whole view:
+     * #3 sets the graphical interface: 
      */
     public SimpleGUI(Controller controller) {
         this.controller = controller;
@@ -107,12 +101,7 @@ public final class SimpleGUI {
         * they're not used...
         */
         public static void main(final String[] args) {
-            new SimpleGUI(new SimpleController().display());
+            new SimpleGUI(new SimpleController()).display();
         }
 
-    }
-
-        /**
-         * #1 main method that starts the Graphical Application:
-        */
 }
