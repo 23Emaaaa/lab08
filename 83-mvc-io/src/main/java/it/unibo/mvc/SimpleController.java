@@ -12,7 +12,7 @@ import java.util.Objects;
  */
 public final class SimpleController implements Controller {
 
-    private final List<String> History_str = new LinkedList()<>;
+    private final List<String> History_str = new LinkedList<>();
     private String nextString;
 
     @Override
@@ -32,9 +32,9 @@ public final class SimpleController implements Controller {
 
     @Override
     public void print_current_string() {
-        String StrNullmessage = new StrNullmessage("String is null");
+        // String StrNullmessage = new StrNullmessage("String is null");
         if (this.nextString == null) {
-            throw new IllegalStateException("Error: " + StrNullmessage);
+            throw new IllegalStateException("Error: String is null");
         }
         History_str.add(this.nextString);
         System.out.println(this.nextString);
