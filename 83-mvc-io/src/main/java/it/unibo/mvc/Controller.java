@@ -28,4 +28,3 @@ public interface Controller {
     */
     void print_current_string();
 }
- 
