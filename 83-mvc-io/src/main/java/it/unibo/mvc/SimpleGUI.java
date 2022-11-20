@@ -28,10 +28,8 @@ public final class SimpleGUI {
      /**
      * #2 sets up the whole view:
      * #3 sets the graphical interface: 
-     */
-    public SimpleGUI() {
-        
-        public SimpleGUI(Controller controller) {
+     */     
+    public SimpleGUI(Controller controller) {
         this.controller = controller;
         final JPanel canvas = new JPanel();
         canvas.setLayout(new BorderLayout());
@@ -105,5 +103,4 @@ public final class SimpleGUI {
         public static void main(final String[] args) {
             new SimpleGUI(new SimpleController()).display();
         }
-
-}
+    }   
